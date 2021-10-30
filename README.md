@@ -1,5 +1,5 @@
 # html_css_template2
 html_css_template2
 
-Deployment Link :
+View deployment :
 https://sohailanour.github.io/html_and_css_template2/
