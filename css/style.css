@@ -76,11 +76,17 @@ ul {
 
 .navbar {
   width: 100%;
-  position: absolute;
+  position: fixed;
   left: 0;
   top: 0;
   z-index: 3;
   color: white;
+  overflow: hidden;
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
 }
 
 .navbar .container {
@@ -140,6 +146,7 @@ ul {
   flex-direction: column;
   align-items: flex-end;
   justify-content: center;
+  cursor: pointer;
 }
 
 .navbar .container .links ul a:hover,
@@ -190,11 +197,15 @@ header {
   height: 100vh;
   color: white;
   background-image: url(../images/asset\ 13.jpeg);
-  background-color: #1f2021;
   background-size: cover;
   display: flex;
   align-items: center;
   position: relative;
+  transition: background-image 0.3s linear;
+  -webkit-transition: background-image 0.3s linear;
+  -moz-transition: background-image 0.3s linear;
+  -ms-transition: background-image 0.3s linear;
+  -o-transition: background-image 0.3s linear;
 }
 
 header .header-content {
@@ -235,6 +246,7 @@ header .header-content p {
 header i {
   position: absolute;
   z-index: 2;
+  cursor: pointer;
 }
 
 header i:first-of-type {
@@ -702,11 +714,17 @@ section {
 .skills .skill div span {
   position: absolute;
   height: 100%;
+  width: 0;
   background-color: var(--main-color);
+  transition: width 2s linear;
+  -webkit-transition: width 2s linear;
+  -moz-transition: width 2s linear;
+  -ms-transition: width 2s linear;
+  -o-transition: width 2s linear;
 }
 
 .skills .skill div span::after {
-  content: attr(percent);
+  content: attr(data-percent);
   position: absolute;
   padding: 3px;
   background-color: black;
@@ -715,6 +733,7 @@ section {
   right: 0;
   transform: translateX(50%);
   border-radius: 4px;
+  transition: 1s;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
