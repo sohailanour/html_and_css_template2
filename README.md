@@ -2,4 +2,4 @@
 html_css_template2
 
 View deployment :
-https://sohailanour.github.io/html_and_css_template2/
+ https://sohailanour.github.io/html_css_template2/
